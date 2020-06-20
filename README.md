@@ -107,4 +107,4 @@ PRONTO o sistema Spring está rodando com sucesso!!!
 ---
 
 ### A próxima etapa será entender como funciona um sistema web 
-### Vamos para a [Etapa 2 - Comunicação de um sistema Web](https://google.com.br)
+### Vamos para a [Etapa 2 - Comunicação de um sistema Web](https://github.com/ErickPeiker/HowToCreateSpringBootProject2)
