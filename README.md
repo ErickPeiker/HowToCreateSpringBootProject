@@ -1,4 +1,6 @@
-# Como criar um projeto Spring Boot
+# SÉRIE DE COMO CRIAR UM PROJETO COM SPRING BOOT
+
+### Etapa 1 - Subir a aplicação
 
 Entre no site [spring initializr](https://start.spring.io/)
 
@@ -55,9 +57,9 @@ Para o projeto se comunicar com o banco de dados é necessário fazer as configu
 Neste exemplo usaremos o banco de dados POSTGRES
 
 Para isso você deve abrir o arquivo application.properties e inserir um parâmetro por linha:
-- spring.datasource.url=jdbc:postgresql://localhost:5432/postgres
+- spring.datasource.url=jdbc:postgresql://localhost:5432/aplicacao
 
-É inserido a URL de conexão com o banco de dados disponível, no formato jdbc:postgresql://[servidor]:[porta]/[nome_do_banco] 
+É inserido a URL de conexão com o banco de dados disponível, no formato jdbc:postgresql://[servidor]:[porta]/[nome_do_banco_de_dados] 
 
 - spring.datasource.username=postgres
 
@@ -77,6 +79,32 @@ Mostrar no console da IDE as consultas executadas no sistema
 
 - spring.jpa.hibernate.ddl-auto=create-drop
 
-Faz a criação do banco de dados ao iniciar o sistema e exclui o banco de dados ao encerrar o sistema
+Faz a criação das tabelas para a utilização no seu banco de dados
 
 ---
+
+Antes de iniciarmos o sistema é preciso criar manualmente o banco de dados no POSTGRES para que nossa aplicação encontre o banco de dados e crie as tabelas automaticamente.
+
+Para isso entre na ferramenta de banco de dados e digite o comando abaixo: 
+
+```
+create database aplicacao;
+```
+
+---
+
+Para iniciar o sistema, devemos clicar com o botão direito sobre  o arquivo de inicialização do spring boot: o AplicacaoApplication.java
+
+Vá na opção em Run As -> Java Application
+
+![Executar o projeto](executar-projeto.png)
+
+PRONTO o sistema Spring está rodando com sucesso!!!
+
+![Sistema rodando](sistema-rodando.png)
+
+
+---
+
+### A próxima etapa será entender como funciona um sistema web 
+### Vamos para a [Etapa 2 - Comunicação de um sistema Web](https://google.com.br)
