@@ -47,3 +47,36 @@ Ao concluir você terá uma estrutura inicial do projeto contendo as pastas e ar
 - pom.xml = Neste arquivo possuímos as configurações do Maven, versão do Java, dependências e como será feito o build.
 
 ![Estrutura inicial do sistema](estrutura-inicial.png)
+
+---
+
+Para o projeto se comunicar com o banco de dados é necessário fazer as configurações de acesso aos dados
+
+Neste exemplo usaremos o banco de dados POSTGRES
+
+Para isso você deve abrir o arquivo application.properties e inserir um parâmetro por linha:
+- spring.datasource.url=jdbc:postgresql://localhost:5432/postgres
+
+É inserido a URL de conexão com o banco de dados disponível, no formato jdbc:postgresql://[servidor]:[porta]/[nome_do_banco] 
+
+- spring.datasource.username=postgres
+
+Nome do usuário para se conectar no banco de dados
+
+- spring.datasource.password=123456
+
+Senha utilizada para se conectar no banco de dados
+
+- spring.datasource.driver-class-name=org.postgresql.Driver
+
+Driver disponibilizado pelas dependências do Maven para o Java se comunicar com o banco de dados
+
+- spring.jpa.show-sql=true
+
+Mostrar no console da IDE as consultas executadas no sistema
+
+- spring.jpa.hibernate.ddl-auto=create-drop
+
+Faz a criação do banco de dados ao iniciar o sistema e exclui o banco de dados ao encerrar o sistema
+
+---
