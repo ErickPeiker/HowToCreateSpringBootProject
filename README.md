@@ -27,3 +27,23 @@ Após revisar as informações acima clique no botão GENERATE
 ---     
 
 Será feito o download de um arquivo .ZIP, extraia a pasta para o workspace de sua IDE.
+
+Neste exemplo utilizarei o Eclipse para fazer a importação do projeto
+- Clique no menu File -> Import..
+- Selecione Maven -> Existing Mave Projects e clique no botão em Next.
+- Ao lado do campo Root Directory clique em Browse...
+- Selecione o projeto que foi descompactado e clique em Selecionar pasta.
+- Clique em Finish para colocar o projeto dentro do Eclipse, aguarde uns instantes enquanto a importação acontece.
+
+![Tela que importa o projeto](importar-projeto.png)
+
+---
+
+Ao concluir você terá uma estrutura inicial do projeto contendo as pastas e arquivos dentro do projeto, os principais arquivos são:
+
+- src/main/java/br/com/empresa/aplicacao.AplicacaoApplication.java = Faz a inicialização do sistema com spring boot
+- src/main/resources/application.properties = Onde são feitas todas configurações para o spring boor iniciar
+- src/test/java/br/com/empresa/aplicacao.AplicacaoApplicationTest.java = Onde são feitas as configurações para executar os testes 
+- pom.xml = Neste arquivo possuímos as configurações do Maven, versão do Java, dependências e como será feito o build.
+
+![Estrutura inicial do sistema](estrutura-inicial.png)
